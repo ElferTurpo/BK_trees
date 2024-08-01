@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación de Animales</title>
+    <link rel="stylesheet" href="estilos.css"> <!-- Enlace al archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Clasificación de Animales</h1>
+
+        <form id="searchForm">
+            <label for="habitatType">Selecciona un tipo de hábitat:</label>
+            <select id="habitatType">
+                <option value="sabana">Sabana</option>
+                <option value="pradera">Pradera</option>
+                <option value="bosque">Bosque</option>
+            </select>
+
+            <label for="sizeType">Selecciona un tamaño:</label>
+            <select id="sizeType">
+                <option value="pequeño">Pequeño</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+
+            <label for="alimentacionType">Selecciona un tipo de alimentación:</label>
+            <select id="alimentacionType">
+                <option value="carnivoro">Carnívoro</option>
+                <option value="herbivoro">Herbívoro</option>
+                <option value="omnivoro">Omnívoro</option>
+            </select>
+
+            <button type="submit">Buscar</button>
+        </form>
+
+        <div id="results"></div> <!-- Área para mostrar los resultados de búsqueda -->
+    </div>
+
+    <script src="app.js"></script> <!-- Enlace al archivo JavaScript -->
+</body>
+</html>
